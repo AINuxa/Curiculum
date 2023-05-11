@@ -1,0 +1,115 @@
+/* Set up styles for the dog and its parts */
+.dog {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 100px;
+  }
+  
+  .head {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(68, 42, 42);
+    margin: 0 auto;
+  }
+  
+  .ear {
+    position: absolute;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(106, 69, 69);
+  }
+  .e-left{
+    left: 0;
+  }
+  .e-right{
+    right: 0;
+  }
+  
+  .left {
+    left: -10px;
+  }
+  
+  .right {
+    right: -10px;
+  }
+  
+  .face {
+    position: relative;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 auto;
+  }
+  
+  .eye {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  .left {
+    left: 5px;
+    top: 5px;
+  }
+  
+  .right {
+    right: 5px;
+    top: 5px;
+  }
+  
+  .nose {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .body {
+    width: 100px;
+    height: 70px;
+    background-color: rgb(66, 18, 18);
+    margin: 0 auto;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    top: -20px;
+  }
+  
+  .tail {
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent brown transparent transparent;
+  }
+  
+  /* Create the animation */
+  .tail {
+    animation: wag 1s ease-in-out infinite alternate;
+  }
+  
+  @keyframes wag {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+  }
